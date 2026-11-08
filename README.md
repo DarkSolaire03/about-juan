@@ -10,7 +10,7 @@ Juan Tristan — known as Juan — from San Antonio, Texas. Gamer, fisher, anima
 
 The site covers, in Juan's own voice:
 
-- Quick facts — San Antonio, Avanzar Interior Technologies, 2016 Chevrolet Malibu LT, Samsung Galaxy S25 Ultra, CompTIA A+ / ITF+
+- Quick facts — San Antonio, call center at Konecta (previously Avanzar Interior Technologies — manufacturing/warehouse, Subway, and Amazon), 2016 Chevrolet Malibu LT, Samsung Galaxy S25 Ultra, CompTIA A+ / ITF+
 - Gaming — PS5 + Nintendo Switch 2, Dark Souls 3, ARK, No Man's Sky, Minecraft Bedrock, Black Ops 6, Elder Scrolls Online, Torn City
 - Music — $uicideboy$, Bones, Xavier Wulf, Korn, Deftones, Movements, Heart to Gold, Red Hot Chili Peppers
 - Fishing — beginner bank fisher, Braunig Lake, catfish and bluegill, Ugly Stik GX2
