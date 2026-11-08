@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get To Know Juan | Juan Tristan</title>
+<meta name="description" content="Get to know Juan Tristan from San Antonio, Texas — gamer, fisher, animal guy, dark-fantasy nerd, and the friend who will always be down for food.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#121417;--bg2:#181b20;--card:#1f232a;--card2:#262b33;--text:#f2efe9;--muted:#b8bcc4;--teal:#2dd4bf;--blue:#60a5fa;--ember:#f97316;--ember2:#fbbf24;--line:#33383f}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:var(--teal)}
+header{position:sticky;top:0;z-index:50;background:rgba(18,20,23,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{max-width:1080px;margin:0 auto;padding:.8rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{font-weight:800;font-size:1.15rem;color:#fff;text-decoration:none;letter-spacing:.02em}.logo span{color:var(--ember)}
+nav{display:flex;flex-wrap:wrap;gap:.35rem}
+nav a{color:var(--muted);text-decoration:none;font-size:.92rem;padding:.35rem .6rem;border-radius:999px}
+nav a:hover{color:#fff;background:#2a2f37}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+.hero{padding:4.5rem 0 3.5rem;background:radial-gradient(700px 320px at 15% 0%,rgba(45,212,191,.18),transparent 60%),radial-gradient(700px 380px at 90% 10%,rgba(249,115,22,.20),transparent 60%),linear-gradient(180deg,#191d22,#121417)}
+.eyebrow{display:inline-block;background:rgba(45,212,191,.14);color:var(--teal);border:1px solid rgba(45,212,191,.35);padding:.35rem .8rem;border-radius:999px;font-weight:700;font-size:.9rem}
+h1{font-size:clamp(2.6rem,7vw,4.4rem);line-height:1.05;margin:1rem 0 .7rem;letter-spacing:-.02em}
+h1 .warm{background:linear-gradient(90deg,var(--teal),var(--blue) 45%,var(--ember));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{font-size:clamp(1.08rem,2.5vw,1.3rem);color:#d6d9de;max-width:760px}
+.hero p.sub{color:var(--muted);max-width:760px;margin-top:.9rem}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.5rem}
+.chip{background:#252a31;border:1px solid var(--line);padding:.45rem .8rem;border-radius:999px;font-size:.93rem}
+.btns{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.7rem}
+.btn{display:inline-block;padding:.75rem 1.25rem;border-radius:999px;text-decoration:none;font-weight:750}
+.btn-primary{background:var(--ember);color:#fff}.btn-primary:hover{background:#ea6a0a}
+.btn-ghost{border:1px solid #4a515a;color:#fff;background:#20242a}.btn-ghost:hover{border-color:var(--teal)}
+section{padding:3.2rem 0}
+section:nth-of-type(even){background:var(--bg2)}
+h2{font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:.4rem;letter-spacing:-.01em}
+h2::after{content:"";display:block;width:64px;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--teal),var(--ember));margin-top:.55rem}
+.kicker{color:var(--teal);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.82rem}
+.intro{color:var(--muted);max-width:820px;margin:.7rem 0 1.6rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.35rem}
+.card:hover{border-color:#4b5563;transform:translateY(-2px);transition:.18s ease}
+.card h3{font-size:1.12rem;margin-bottom:.35rem}
+.card p,.card li{color:var(--muted)}
+.card .big{font-size:1.7rem}
+.tag{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ember2);margin-bottom:.4rem}
+ul.clean{list-style:none;display:grid;gap:.55rem}
+ul.clean li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.85rem 1rem}
+ul.clean li b{color:#fff}
+.artists{display:flex;flex-wrap:wrap;gap:.6rem}
+.artist{background:linear-gradient(135deg,#252b33,#1d2127);border:1px solid var(--line);border-radius:999px;padding:.6rem 1rem;font-weight:700}
+.artist small{display:block;font-weight:500;color:var(--muted);font-size:.82rem}
+.pets{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.pet{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.4rem}
+.pet h3{font-size:1.25rem}
+.pet .emoji{font-size:2rem}
+.callout{background:linear-gradient(135deg,rgba(45,212,191,.16),rgba(249,115,22,.16));border:1px solid rgba(45,212,191,.35);border-radius:16px;padding:1.5rem}
+.callout a{font-weight:700}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+footer{border-top:1px solid var(--line);padding:2.5rem 0 3rem;color:var(--muted)}
+footer a{color:var(--teal)}
+.foot-links{display:flex;flex-wrap:wrap;gap:1rem;margin:.8rem 0}
+@media(max-width:640px){nav{display:none}.hero{padding:3rem 0 2.5rem}section{padding:2.4rem 0}}
+</style>
+</head>
+<body>
+<header><div class="nav"><a class="logo" href="#top">Get To Know <span>Juan</span></a><nav><a href="#about">About</a><a href="#gaming">Gaming</a><a href="#music">Music</a><a href="#fishing">Fishing</a><a href="#pets">Pets</a><a href="#food">Food</a><a href="#fandoms">Fandoms</a><a href="#projects">Projects</a></nav></div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+<span class="eyebrow">👋 San Antonio, Texas &bull; DarkSolaire03</span>
+<h1>Hey, I&rsquo;m <span class="warm">Juan</span>.</h1>
+<p class="lede">I&rsquo;m Juan Tristan — gamer, fisher, animal guy, dark-fantasy nerd, and the friend who will always be down for food.</p>
+<p class="sub">I&rsquo;m from San Antonio, Texas, I&rsquo;ve got long hair, a beard and mustache, ear and eyebrow piercings, and a pretty classic dark-fantasy / gamer vibe — but I&rsquo;m warm, easy to talk to, and always up for a good time with good people.</p>
+<div class="chips"><span class="chip">🎮 PS5 &amp; Switch 2</span><span class="chip">🎣 Bank fisher</span><span class="chip">🐀 Animal guy</span><span class="chip">🐉 Dark fantasy</span><span class="chip">🍜 Always down for food</span></div>
+<div class="btns"><a class="btn btn-primary" href="#about">Get to know me ↓</a><a class="btn btn-ghost" href="#projects">See what I&rsquo;m working on</a></div>
+</div></section>
+
+<section id="about"><div class="wrap">
+<p class="kicker">About me</p><h2>Quick facts</h2>
+<p class="intro">Here&rsquo;s the short version of me — the stuff my friends usually learn first.</p>
+<div class="grid">
+<div class="card"><span class="big">📍</span><h3>San Antonio native</h3><p>I&rsquo;m from San Antonio, Texas — Texas only, through and through.</p></div>
+<div class="card"><span class="big">🏭</span><h3>Work</h3><p>I work in manufacturing / warehouse operations at Avanzar Interior Technologies. I&rsquo;ve previously worked at Subway and Amazon. My usual schedule is Monday–Friday, 11am–8pm.</p></div>
+<div class="card"><span class="big">🚗</span><h3>My ride</h3><p>I drive a 2016 Chevrolet Malibu LT — and I do my own routine maintenance, like brake pads, filters, and fluids.</p></div>
+<div class="card"><span class="big">📱</span><h3>My phone</h3><p>Samsung Galaxy S25 Ultra. Yes, I notice the camera. No, I will not apologize for it.</p></div>
+<div class="card"><span class="big">💻</span><h3>Certs &amp; learning</h3><p>I&rsquo;ve earned CompTIA A+ and CompTIA IT Fundamentals (ITF+), and I&rsquo;m currently working toward finishing CompTIA Network+.</p></div>
+<div class="card"><span class="big">✨</span><h3>My vibe</h3><p>Long hair, beard and mustache, ear and eyebrow piercings, dark-fantasy / gamer energy — warm and approachable underneath it all.</p></div>
+</div></div></section>
+
+<section id="gaming"><div class="wrap">
+<p class="kicker">Gaming</p><h2>I take my games seriously (and not at all)</h2>
+<p class="intro">I play primarily on PS5 and Nintendo Switch 2 — no PC or Xbox gaming for me. My favorite game of all time is <b>Dark Souls 3</b>, which is where my username <b>DarkSolaire03</b> comes from. Praise the sun, obviously.</p>
+<ul class="clean">
+<li><b>Dark Souls 3</b> — my all-time favorite, and the reason I&rsquo;m DarkSolaire03.</li>
+<li><b>ARK: Survival Ascended</b> — I customize dedicated ARK servers (Nitrado) for my community.</li>
+<li><b>No Man&rsquo;s Sky</b> — exploring strange planets never gets old.</li>
+<li><b>Minecraft Bedrock</b> — I run and customize modded Minecraft Bedrock servers too.</li>
+<li><b>Call of Duty: Black Ops 6</b> — for when I want something fast and loud.</li>
+<li><b>Elder Scrolls Online</b> — fantasy worlds, quests, and way too many hours.</li>
+<li><b>Torn City</b> — I have a faction leadership role there.</li>
+</ul>
+<p class="intro" style="margin-top:1.4rem">I also run a fishing-community Discord server, and I&rsquo;m frequently exploring programming and technical problem-solving — usually because a game server, a website, or an idea I had needed fixing.</p>
+</div></section>
+
+<section id="music"><div class="wrap">
+<p class="kicker">Music</p><h2>What&rsquo;s on my playlist</h2>
+<p class="intro">A little bit of everything loud, moody, and fun to drive to. These are my favorites:</p>
+<div class="artists">
+<span class="artist">$uicideboy$<small>Dark, heavy, late-night energy</small></span>
+<span class="artist">Bones<small>Underground rap</small></span>
+<span class="artist">Xavier Wulf<small>Hard-hitting rap</small></span>
+<span class="artist">Korn<small>Nu-metal classic</small></span>
+<span class="artist">Deftones<small>Atmospheric metal</small></span>
+<span class="artist">Movements<small>Post-hardcore</small></span>
+<span class="artist">Heart to Gold<small>Emo / indie</small></span>
+<span class="artist">Red Hot Chili Peppers<small>Funk rock legends</small></span>
+</div>
+</div></section>
+
+<section id="fishing"><div class="wrap">
+<p class="kicker">Outdoors</p><h2>Fishing</h2>
+<p class="intro">I&rsquo;m a beginner bank fisher, and I love it. No boat needed — just a rod, some patience, and a good spot by the water.</p>
+<div class="grid">
+<div class="card"><span class="tag">My spot</span><h3>Braunig Lake</h3><p>My go-to fishing spot around San Antonio.</p></div>
+<div class="card"><span class="tag">What I catch</span><h3>Catfish &amp; bluegill</h3><p>The classics. Catfish put up a fight, bluegill keep things fun.</p></div>
+<div class="card"><span class="tag">My rod</span><h3>Ugly Stik GX2</h3><p>My trusty rod — simple, sturdy, and ready to go whenever I am.</p></div>
+</div>
+<p class="intro" style="margin-top:1.4rem">Fishing is one of my favorite ways to slow down, get outside, and enjoy a quiet day — and it&rsquo;s how my fishing-community Discord server got started.</p>
+</div></section>
+
+<section id="pets"><div class="wrap">
+<p class="kicker">My pets</p><h2>The animal crew</h2>
+<p class="intro">I&rsquo;m a big animal guy. My home is a little bit zoo, a little bit family — and I wouldn&rsquo;t have it any other way.</p>
+<div class="pets">
+<div class="pet"><span class="emoji">🐀</span><h3>Rats</h3><p>Yes, rats — plural! They&rsquo;re smart, social, funny little guys, and they&rsquo;re a big part of my life.</p></div>
+<div class="pet"><span class="emoji">🦎</span><h3>My iguana</h3><p>My pet iguana lives in a vertical enclosure with controlled lighting and heating, and eats a leafy-green diet. A very fancy lizard, living his best life.</p></div>
+<div class="pet"><span class="emoji">🐱</span><h3>Asmodeus</h3><p>My cat Asmodeus — who I jokingly refer to as my son. He runs the house, and honestly? He knows it. 😄</p></div>
+</div></div></section>
+
+<section id="food"><div class="wrap">
+<p class="kicker">Food favorites</p><h2>Always down for food</h2>
+<p class="intro">If you&rsquo;re hungry, I&rsquo;m in. These are my favorites and my regular go-tos:</p>
+<div class="two">
+<div class="card"><h3>🍜 Big favorites</h3><p>Mongolian buffets are a big favorite of mine. Tex-Mex and Mediterranean fast-casual are right up there too.</p></div>
+<div class="card"><h3>🍔 Regular go-tos</h3><p>McDonald&rsquo;s, Subway, Whataburger, and Taco Bell — the reliable lineup for a quick bite.</p></div>
+</div></div></section>
+
+<section id="fandoms"><div class="wrap">
+<p class="kicker">Fandoms &amp; interests</p><h2>Things I nerd out about</h2>
+<div class="grid">
+<div class="card"><h3>⚡ Harry Potter</h3><p>I own a replica of Sirius Black&rsquo;s wand. Yes, I&rsquo;ve picked a favorite — and yes, it&rsquo;s Sirius.</p></div>
+<div class="card"><h3>🌌 Star Wars</h3><p>A galaxy far, far away, and I&rsquo;m always happy to go back there.</p></div>
+<div class="card"><h3>🍥 Naruto / Shippuden</h3><p>Proud rewatcher. Believe it.</p></div>
+<div class="card"><h3>🎨 AI image generation</h3><p>I love playing with AI image generation and seeing what wild ideas come to life.</p></div>
+<div class="card"><h3>🐉 Dark-fantasy stories</h3><p>I&rsquo;m creating my own dark-fantasy world — with favorite characters named Inferna, Malphur, Baelfire, Emberwrath, and Obsidara.</p></div>
+<div class="card"><h3>📖 My lore site</h3><p>Check out my dark-fantasy world: <a href="https://darksolaire03.github.io/emberwrath-chronicles/">Emberwrath Chronicles</a></p></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap">
+<p class="kicker">What I&rsquo;m working on</p><h2>Right now</h2>
+<div class="callout">
+<p>🎯 <b>Finishing CompTIA Network+</b> — I&rsquo;m studying and building toward that next cert. You can follow along with my study site:</p>
+<p style="margin-top:.6rem"><a href="https://darksolaire03.github.io/network-plus-quest/">Network+ Quest — my CompTIA Network+ study site →</a></p>
+<p style="margin-top:1rem">🌐 <b>Building little websites on GitHub</b> — like this one! I love learning by making things and putting them out there.</p>
+<p style="margin-top:1rem">🐉 <b>Creating my dark-fantasy world</b> — Emberwrath Chronicles, with Inferna, Malphur, Baelfire, Emberwrath, and Obsidara:</p>
+<p style="margin-top:.6rem"><a href="https://darksolaire03.github.io/emberwrath-chronicles/">Emberwrath Chronicles →</a></p>
+</div></div></section>
+</main>
+<footer><div class="wrap">
+<p><b style="color:#fff">Made by Juan / DarkSolaire03</b> — thanks for stopping by and getting to know me!</p>
+<div class="foot-links"><a href="https://darksolaire03.github.io/network-plus-quest/">Network+ Quest</a><a href="https://darksolaire03.github.io/emberwrath-chronicles/">Emberwrath Chronicles</a><a href="https://github.com/DarkSolaire03">GitHub: DarkSolaire03</a></div>
+<p>San Antonio, Texas • Gamer • Fisher • Animal guy • Dark-fantasy nerd • Always down for food</p>
+<p style="margin-top:.6rem;font-size:.9rem">© <span id="year">2026</span> Juan Tristan / DarkSolaire03</p>
+</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
